@@ -47,15 +47,15 @@ const playGame = (userChoice) =>{                         // playGame knows the 
         drawGame() ;                                      //call draw game function
     }else {
     let userWin = true;
-    if (userChoice === "rock") {
+    if (userChoice === "stone") {
       //scissors, paper
       userWin = compChoice === "paper" ? false : true;
     } else if (userChoice === "paper") {
-      //rock, scissors
-      userWin = compChoice === "scissors" ? false : true;
+      //stone, scissors
+      userWin = compChoice === "scissors" ? false : true;N
     } else {
-      //rock, paper
-      userWin = compChoice === "rock" ? false : true;
+      //stone, paper
+      userWin = compChoice === "stone" ? false : true;
     }
     showWinner(userWin, userChoice, compChoice);          //to show winner
   }
@@ -67,4 +67,5 @@ choices.forEach((choice) => {                               //use to choice indi
         const user_choice = choice.getAttribute("id");      //use to access div Id
         playGame(user_choice);                              //then call playGame where we pass user choice
     })
+
 });
