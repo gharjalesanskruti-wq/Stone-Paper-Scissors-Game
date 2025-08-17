@@ -52,7 +52,7 @@ const playGame = (userChoice) =>{                         // playGame knows the 
       userWin = compChoice === "paper" ? false : true;
     } else if (userChoice === "paper") {
       //stone, scissors
-      userWin = compChoice === "scissors" ? false : true;N
+      userWin = compChoice === "scissors" ? false : true;
     } else {
       //stone, paper
       userWin = compChoice === "stone" ? false : true;
@@ -69,3 +69,4 @@ choices.forEach((choice) => {                               //use to choice indi
     })
 
 });
+
